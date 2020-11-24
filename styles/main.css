@@ -1,0 +1,134 @@
+:root {
+    --red: #E50914;
+    --black: #090909;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu .logo img{
+    height: 60px;
+}
+
+.main-menu .logo {
+    margin-right: 35px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.main-banner {
+    font-size: 16px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .90), rgba(0, 0, 0, 0) 100%), url("/images/sherlock-wallpaper.png");
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-banner .description {
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.main-banner .container .title img {
+    height: 70px;
+}
+
+.banner-button {
+    border: none;
+    border-radius: 5px;
+    padding: 13px 35px;
+    margin-right: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s ease all;
+}
+
+.banner-button:nth-child(1) {
+    background-color: white;
+    color: black;
+}
+
+.banner-button:nth-child(2) {
+    background-color: rgba(109,109,110,0.7);
+    color: white;
+}
+
+.banner-button:nth-child(1):hover {
+    background-color: rgba(255,255,255,0.75);
+}
+
+.banner-button:nth-child(2):hover {
+    background-color: rgba(109,109,110,0.4);
+}
+
+.banner-button i {
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 50px;
+}
+
+.main-banner .container {
+    width: 40%;
+}
+
+.main-banner .container .title {
+     margin-bottom: 30px;
+}
+
+.box-banner {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.aside-menu {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+.aside-menu i {
+    cursor: pointer;
+}
